@@ -570,7 +570,7 @@ body{
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 380px) {
   .collusionText{
         position: relative;
         left: 5%;
@@ -593,15 +593,15 @@ body{
     }
 
     .img3{
-        height: 30%;
-        width:  30%;
+        height: 25%;
+        width:  25%;
         margin-right: 4%;
 
     }
 
     .img4{
-        height: 30%;
-        width: 30%;
+        height: 25%;
+        width: 25%;
     }
     .img1{
         height: 23%;
@@ -611,8 +611,8 @@ body{
 
     .img2{
         position: relative;
-        top: 58%;
-        left: -58%;
+        top: 55%;
+        left: -57%;
         height: 45%;
         width: auto;
     }
