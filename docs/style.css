@@ -3,29 +3,38 @@ body{
     font-size: 18px;
     margin: 0;
     padding: 0;
-    color: white;
+    color: black;
 }
 /* First section*/
-.header{
+.container {
+    width: 1170px;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.logo{
     height: 11.0677083333333%;
+    background-color: white;
+    color: black;
 }
 
 .intro{
-    color: black;
     text-align: center;
 }
 
-.collusion{
-    height: 100vh;
-    background: url(Images/background.png)  no-repeat center top / cover;
+.header{
+    background: url(Images/background.png) no-repeat center top / cover;
+    padding-top: 57px;
+    color: #fff;
+    padding-bottom: 322px
 }
 
-.collusionText{
+.collusion{
     position: relative;
-    left: 57.94099183929692%;
-    top: 45%;
-    width: 33.08931185944363%;
+    left: 60%;
+    top: 80%;
     color: black;
+    width: 452px;
 }
 
 .collusionBold{
@@ -34,6 +43,13 @@ body{
     margin: 0;
 }
 
+.newtrend{
+    margin: 0;
+}
+
+.anexclusive{
+    margin-top: 0;
+}
 .shopnow{
     width: 305px;
     display: flex;
@@ -66,50 +82,28 @@ body{
 /* Second section*/
 
 .gallery{
-    display: flex;
-    justify-content: center;
     height: 100vh;
 }
 
-.galleryContent{
+.gallerycontent{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 2%;
-    width: 85%;
-    height: 93%;
-    word-wrap: break-word;
+    height: 570px;
+    margin-top: 5%;
 }
 
-.imgleft{
-    margin-right: 3%;
-    word-wrap: break-word;
-}
-
-.imgleft2{
-    display: inline-flex;
+imgleft{
+     display: flex;
+    flex-wrap: wrap;
 }
 
 .img3{
-    height: 48%;
-    width: 48%;
-    margin-right: 9%
+    margin-right: 4%;
 }
 
-.img4{
-    height: 48%;
-    width: auto;
-    width: 48%;
-    height: 45%;
-}
-
-.img1{
-   height: 50%;
-    width: auto;
-    margin-bottom: 4%;
-}
-
-.img2{
-    height: 100%;
+.item{
+    margin-bottom: 3%;
 }
 
 .gallery img {
@@ -121,593 +115,123 @@ body{
     transform: scale(1.1);
 }
 
-/* Adaptive*/
+/* ADAPTIVE*/
 
 @media screen and (max-width: 1200px) {
-   .collusionText{
-    position: relative;
-    left: 57.94099183929692%;
-    top: 30%;
-    width: 33.08931185944363%;
-    color: black;
+    .container {
+        width: 1140px;
     }
-/* Second section*/
     .gallery{
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-        width: 100%;
-        width: auto;
-    }
-
-    .galleryContent{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 2%;
-        width: 100%;
-        height: 93%;
-        word-wrap: break-word;
-    }
-
-    .imgleft{
-        word-wrap: break-word;
-    }
-
-    .imgleft2{
-        display: inline-flex;
-    }
-
-    .img3{
-        height: 43%;
-        width: 43%;
-        margin-right: 13%;
-        margin-left: 10%;
-
-    }
-
-    .img4{
-        height: 43%;
-        width: 43%;
-    }
-    .img1{
-        height: 50%;
-        width: auto;
-        margin-bottom: 4%;
-        margin-left: 8%;
-    }
-
-    .img2{
-        height: 100%;
-        margin-right: 4%;
+        height: 50vh;
     }
 }
 
 @media screen and (max-width: 1199px) {
-  .collusionText{
-        position: relative;
-        left: 58%;
-        top: 30%;
-        width: 33.08931185944363%;
-        color: black;
-        font-size: 16px;
+    .container {
+        width: 960px;
     }
+    .gallerycontent{
+        justify-content: center;
 
-    .collusionBold{
-        font-size: 60px;
-        font-weight: bold;
-        margin: 0;
     }
-/* Second section*/
+    .item2{
+        margin-top: 3%;
+    }
     .gallery{
+        height: 100vh;
+    }
+    .collusion{
+    left: 50%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+    .collusion{
+    left: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+    .collusion{
+    left: 15%;
+    }
+    .img1{
+        width: 90%;
+        height: auto;
+    }
+    .img3{
+        width: 43%;
+        height: auto;
+    }
+    .img4{
+        width: 43%;
+        height: auto;
+    }
+    .img2{
+        width: 90%;
+        height: auto;
+    }
+    .item , .item2 , .item3 , .item4{
         display: flex;
         justify-content: center;
-        height: 100vh;
-        width: 100%;
-        width: auto;
-        margin-top: 5%;
-    }
-
-    .galleryContent{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 2%;
-        width: 100%;
-        height: 93%;
-        word-wrap: break-word;
-    }
-
-    .imgleft{
-        word-wrap: break-word;
-    }
-
-    .imgleft2{
-        display: inline-flex;
-    }
-
-    .img3{
-        height: 36%;
-        width: 36%;
-        margin-right: 9%;
-        margin-left: 26%;
-
-    }
-
-    .img4{
-        height: 36%;
-        width: 36%;
-    }
-    .img1{
-        height: 45%;
-        width: auto;
-        margin-bottom: 4%;
-        margin-left: 24%;
-    }
-
-    .img2{
-        height: 90%;
-        margin-right: 12%;
     }
 }
 
-@media screen and (max-width: 959px) {
-  .collusionText{
-        position: relative;
-        left: 50%;
-        top: 40%;
-        width: 33.08931185944363%;
-        color: black;
-        font-size: 16px;
+@media screen and (max-width: 575px) {
+    .container {
+        width: 100%;
     }
+    .collusion{
+    left: 5%;
+    }
+}
 
+@media screen and (max-width: 475px) {
+    .collusion{
+        left: 0%;
+        font-size: 16px;
+        width: 370px;
+    }
     .collusionBold{
         font-size: 60px;
         font-weight: bold;
         margin: 0;
     }
-
-    .shopnow{
-        width: 280px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .btn1{
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding-top: 8px;
-        width: 122px;
-        height: 28px;
-        background-color: #22262A;
-    }
-
-    .btn2{
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding-top: 8px;
-        width: 122px;
-        height: 28px;
-        background-color: #22262A;
-    }
-/* Second section*/
-    .gallery{
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-        width: 100%;
-        width: auto;
-        margin-top: 5%;
-    }
-
-    .galleryContent{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 2%;
-        width: 100%;
-        height: 93%;
-        word-wrap: break-word;
-    }
-
-    .imgleft{
-        word-wrap: break-word;
-    }
-
-    .imgleft2{
-        display: inline-flex;
-    }
-
-    .img3{
-        height: 25%;
-        width: 25%;
-        margin-right: 4%;
-        margin-left: 50%;
-
-    }
-
-    .img4{
-        height: 25%;
-        width: 25%;
-    }
-    .img1{
-        height: 30%;
-        width: auto;
-        margin-bottom: 4%;
-        margin-left: 48%;
-    }
-
-    .img2{
-        height: 63%;
-        margin-right: 36%;
-    }
 }
 
-@media screen and (max-width: 719px) {
-  .collusionText{
-        position: relative;
-        left: 18%;
-        top: 40%;
-        width: 33.08931185944363%;
-        color: black;
+@media screen and (max-width: 365px) {
+    .collusion{
+        left: 0%;
         font-size: 16px;
+        width: 280px;
     }
-
     .collusionBold{
-        font-size: 60px;
+        font-size: 40px;
         font-weight: bold;
         margin: 0;
     }
-
-    .shopnow{
-        width: 280px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .btn1{
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding-top: 8px;
-        width: 122px;
-        height: 28px;
-        background-color: #22262A;
-    }
-
-    .btn2{
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding-top: 8px;
-        width: 122px;
-        height: 28px;
-        background-color: #22262A;
-    }
-/* Second section*/
-    .gallery{
-        height: 100vh;
-        width: 100%;
-        width: auto;
-        margin-top: 5%;
-    }
-
-    .galleryContent{
-        margin-top: 2%;
-        width: 100%;
-        height: 93%;
-        word-wrap: break-word;
-    }
-
-    .imgleft{
-        position: relative;
-        left: 22%;
-        word-wrap: break-word;
-    }
-
-    .imgleft2{
-        display: inline-flex;
-    }
-
-    .img3{
-        height: 30%;
-        width:  30%;
-        margin-right: 4%;
-
-    }
-
-    .img4{
-        height: 30%;
-        width: 30%;
-    }
-    .img1{
-        height: 35%;
-        width: auto;
-        margin-bottom: 4%;
-    }
-
-    .img2{
-        position: relative;
-        top: 78%;
-        left: -33%;
-        height: 65%;
-        width: auto;
-    }
 }
 
-@media screen and (max-width: 539px) {
-  .collusionText{
-        position: relative;
-        left: 10%;
-        top: 40%;
-        width: 33.08931185944363%;
-        color: black;
+@media screen and (max-width: 280px) {
+    .collusion{
+        left: 0%;
         font-size: 16px;
+        width: 280px;
     }
-
     .collusionBold{
-        font-size: 60px;
+        font-size: 40px;
         font-weight: bold;
         margin: 0;
     }
-
     .shopnow{
-        width: 280px;
+        width: 270px;
         display: flex;
         justify-content: space-between;
-    }
-
-    .btn1{
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding-top: 8px;
-        width: 122px;
-        height: 28px;
-        background-color: #22262A;
-    }
-
-    .btn2{
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding-top: 8px;
-        width: 122px;
-        height: 28px;
-        background-color: #22262A;
-    }
-/* Second section*/
-    .gallery{
-        height: 100vh;
-        width: 100%;
-        width: auto;
-        margin-top: 5%;
-    }
-
-    .galleryContent{
-        margin-top: 2%;
-        width: 100%;
-        height: 93%;
-        word-wrap: break-word;
-    }
-
-    .imgleft{
-        position: relative;
-        left: 19%;
-        word-wrap: break-word;
-    }
-
-    .imgleft2{
-        display: inline-flex;
-    }
-
-    .img3{
-        height: 30%;
-        width:  30%;
-        margin-right: 4%;
-
-    }
-
-    .img4{
-        height: 30%;
-        width: 30%;
-    }
-    .img1{
-        height: 25%;
-        width: auto;
-        margin-bottom: 4%;
-    }
-
-    .img2{
-        position: relative;
-        top: 58%;
-        left: -50%;
-        height: 45%;
-        width: auto;
-    }
 }
-
-@media screen and (max-width: 450px) {
-  .collusionText{
-        position: relative;
-        left: 5%;
-        top: 40%;
-        width: 33.08931185944363%;
-        color: black;
-        font-size: 16px;
-    }
-
-/* Second section*/
-    .img3{
-        height: 26%;
-        width:  26%;
-        margin-right: 4%;
-
-
-    }
-
-    .img4{
-        height: 26%;
-        width: 26%;
-    }
-    .img1{
-        height: 25%;
-        width: auto;
-        margin-bottom: 4%;
-    }
-
-    .img2{
-        position: relative;
-        top: 58%;
-        left: -55%;
-        height: 45%;
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 380px) {
-  .collusionText{
-        position: relative;
-        left: 5%;
-        top: 40%;
-        width: 33.08931185944363%;
-        color: black;
-        font-size: 16px;
-    }
-
-
-/* Second section*/
-    .imgleft{
-        position: relative;
-        left: 22%;
-        word-wrap: break-word;
-    }
-
-    .imgleft2{
-        display: inline-flex;
-    }
-
-    .img3{
-        height: 25%;
-        width:  25%;
-        margin-right: 4%;
-
-    }
-
-    .img4{
-        height: 25%;
-        width: 25%;
-    }
-    .img1{
-        height: 23%;
-        width: auto;
-        margin-bottom: 4%;
-    }
-
-    .img2{
-        position: relative;
-        top: 55%;
-        left: -57%;
-        height: 45%;
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 321px) {
-  .collusionText{
-        position: relative;
-        left: 5%;
-        top: 40%;
-        width: 33.08931185944363%;
-        color: black;
-        font-size: 16px;
-    }
-
-    .collusionBold{
-        font-size: 50px;
-        font-weight: bold;
-        margin: 0;
-    }
-
-    .shopnow{
-        width: 280px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .btn1{
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding-top: 8px;
-        width: 122px;
-        height: 28px;
-        background-color: #22262A;
-    }
-
-    .btn2{
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding-top: 8px;
-        width: 122px;
-        height: 28px;
-        background-color: #22262A;
-    }
-/* Second section*/
-    .gallery{
-        height: 100vh;
-        width: 100%;
-        width: auto;
-        margin-top: 5%;
-    }
-
-    .galleryContent{
-        margin-top: 2%;
-        width: 100%;
-        height: 93%;
-        word-wrap: break-word;
-    }
-
-    .imgleft{
-        position: relative;
-        left: 16%;
-        word-wrap: break-word;
-    }
-
-    .imgleft2{
-        display: inline-flex;
-    }
-
-    .img3{
-        height: 25%;
-        width:  25%;
-        margin-right: 4%;
-
-    }
-
-    .img4{
-        height: 25%;
-        width: 25%;
-    }
-    .img1{
-        height: 27%;
-        width: auto;
-        margin-bottom: 4%;
-    }
-
-    .img2{
-        position: relative;
-        top: 65%;
-        left: -70%;
-        height: 45%;
-        width: auto;
-    }
 }
